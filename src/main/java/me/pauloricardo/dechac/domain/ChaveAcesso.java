@@ -18,7 +18,7 @@ public class ChaveAcesso {
         if(chaveAcesso == null)
             throw new IllegalArgumentException("Chave de acesso inválida.");
 
-        chaveAcesso = chaveAcesso.trim();
+        chaveAcesso = chaveAcesso.replace(" ","");
         if(chaveAcesso.length() != 44)
             throw new IllegalArgumentException("Chave de acesso inválida.");
 
